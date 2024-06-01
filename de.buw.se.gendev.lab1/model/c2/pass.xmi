@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lab1:ProductTeam
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:lab1="http://www.example.org/lab1">
+  <ownBy/>
+  <maintainBy
+      manageMembers="1"/>
+  <designBy/>
+</lab1:ProductTeam>

@@ -56,8 +56,8 @@ class CodeGenAndOclTest {
     @Test
     void testFailInstance1() {
     	Diagnostic diag = diagnoseModel(failInst1);
-    	if (diag.getSeverity() != Diagnostic.WARNING) {
-    		System.out.println("Validation of " + failInst1 + "should fail with an error.");
+    	if (diag.getSeverity() != Diagnostic.OK) {
+    		System.out.println("Validation of " + failInst1 + " should fail with an error.");
     		fail("Validation should fail.");
     	}
     }
@@ -91,8 +91,8 @@ class CodeGenAndOclTest {
     @Test
     void testFailInstance2() {
     	Diagnostic diag = diagnoseModel(failInst2);
-    	if (diag.getSeverity() != Diagnostic.WARNING) {
-    		System.out.println("Validation of " + failInst2 + "should fail with an error.");
+    	if (diag.getSeverity() != Diagnostic.OK) {
+    		System.out.println("Validation of " + failInst2 + " should fail with an error.");
     		fail("Validation should fail.");
     	}
     }

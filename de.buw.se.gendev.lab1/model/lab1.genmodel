@@ -10,8 +10,43 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Lab1" basePackage="de.buw.se.gendev" disposableProviderFactory="true"
       ecorePackage="lab1.ecore#/">
-    <genClasses ecoreClass="lab1.ecore#//NewEClass1">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//NewEClass1/newAttribute"/>
+    <genClasses ecoreClass="lab1.ecore#//ProductTeam">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//ProductTeam/productName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//ProductTeam/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//ProductTeam/productStartDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab1.ecore#//ProductTeam/ownBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab1.ecore#//ProductTeam/maintainBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab1.ecore#//ProductTeam/designBy"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//ProductOwner">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//ProductOwner/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//ProductOwner/specializeSkills"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//EngineerManager">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//EngineerManager/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//EngineerManager/manageMembers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lab1.ecore#//EngineerManager/manageSWE"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lab1.ecore#//EngineerManager/manageDevOps"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lab1.ecore#//EngineerManager/manageQA"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//UXDesigner">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//UXDesigner/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//UXDesigner/designTools"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//SoftwareEngineer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//SoftwareEngineer/developmentFrameworks"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//QAEngineer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//QAEngineer/testFrameworks"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//DevOpsEngineer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//DevOpsEngineer/integrationTools"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//DevOpsEngineer/deployTools"/>
+    </genClasses>
+    <genClasses ecoreClass="lab1.ecore#//Engineer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//Engineer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//Engineer/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab1.ecore#//Engineer/programmingLanguage"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
